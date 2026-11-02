@@ -1,0 +1,122 @@
+[
+  {
+    "id": "T01",
+    "question": "Microsoft 365への初回サインイン時に必要な設定を教えてください。",
+    "expected_answer": "会社メールと一時パスワードでサインインし、パスワードを変更します。その後、MFAを有効化し、AuthenticatorアプリでQRコードを読み取ってワンタイムコードを確認します。バックアップ電話番号も登録します。",
+    "reference_doc_ids": ["m365-001"]
+  },
+  {
+    "id": "T02",
+    "question": "OneDriveを初回起動したときに作成するフォルダを教えてください。",
+    "expected_answer": "「会社共通」「部門共有」「個人作業」の3フォルダを作成します。",
+    "reference_doc_ids": ["m365-002"]
+  },
+  {
+    "id": "T03",
+    "question": "部門代表アドレスに届いたメールへ返信するときの注意点は何ですか。",
+    "expected_answer": "返信時は、差出人を必ず共有アドレスに切り替えます。また、スレッド管理のためにカテゴリ色を統一して運用します。",
+    "reference_doc_ids": ["outlook-002"]
+  },
+  {
+    "id": "T04",
+    "question": "Kintoneに過去データをCSVでインポートするとき、文字コードは何にしますか。",
+    "expected_answer": "文字コードをUTF-8に変換してからインポートします。",
+    "reference_doc_ids": ["kintone-003"]
+  },
+  {
+    "id": "T05",
+    "question": "Backlogの新規プロジェクトで設定する標準的なワークフローを教えてください。",
+    "expected_answer": "「起票 → 対応中 → レビュー → 完了」を既定のワークフローとして設定します。",
+    "reference_doc_ids": ["backlog-001"]
+  },
+  {
+    "id": "T06",
+    "question": "Slackで共有した正式文書は、最終的にどこへ保存しますか。",
+    "expected_answer": "正式文書は、SharePointまたはBacklogに保存します。Slack上でのファイル共有は一時的な利用を前提とします。",
+    "reference_doc_ids": ["slack-003"]
+  },
+  {
+    "id": "T07",
+    "question": "新入社員がMicrosoft 365を安全に利用開始するために必要な初期作業をまとめてください。",
+    "expected_answer": "少なくとも、次の作業が必要です。①一時パスワードでサインインする ②パスワードを変更する ③Authenticatorアプリを使ってMFAを設定する ④バックアップ電話番号を登録する ⑤OneDriveに「会社共通」「部門共有」「個人作業」を作成する ⑥Teamsのプロフィールと通知を設定する",
+    "reference_doc_ids": ["m365-001", "m365-002", "m365-003"]
+  },
+  {
+    "id": "T08",
+    "question": "重要な業務文書を社内で共有し、変更履歴も管理したい場合はどうすればよいですか。",
+    "expected_answer": "正式文書はSharePointまたはBacklogに保存します。SharePointを使用する場合は、文書ライブラリでバージョン管理を有効にします。外部共有は既定で無効です。Slackは正式文書の長期保管場所として使用しません。",
+    "reference_doc_ids": ["m365-004", "slack-003", "backlog-003"]
+  },
+  {
+    "id": "T09",
+    "question": "長期休暇や出張で不在になる場合、OutlookとSlackではどのような設定をしますか。",
+    "expected_answer": "Outlookでは自動返信を有効にし、社内向けと社外向けの文面を分けて、担当引継ぎ先と代表窓口を記載します。Slackではカスタムステータスに代替連絡先を記載します。",
+    "reference_doc_ids": ["outlook-001", "slack-002"]
+  },
+  {
+    "id": "T10",
+    "question": "プロジェクトの期限超過や担当者の負荷を把握する方法を教えてください。",
+    "expected_answer": "Mondayでは、ダッシュボードに「期限超過アイテム」と「担当者別作業量」などのウィジェットを追加します。Backlogでは、ガントチャートやバーンダウンを使用し、担当者の負荷が偏らないようにします。",
+    "reference_doc_ids": ["monday-003", "backlog-002"]
+  },
+  {
+    "id": "T11",
+    "question": "案件に関する議論や依頼は、どこへ記録するのが適切ですか。",
+    "expected_answer": "Backlogの課題に関する議論は、課題のコメント欄に記録し、メールでの議論は避けます。SlackでもDMによる依頼を避け、案件チャンネルやスレッドを使用します。",
+    "reference_doc_ids": ["backlog-004", "slack-001"]
+  },
+  {
+    "id": "T12",
+    "question": "Kintoneで新規レコードを申請する手順を教えてください。",
+    "expected_answer": "必須項目を入力した後、状態フィールドを「申請中」に変更して保存します。プロセス管理では承認者を部門リーダーに設定し、承認と差戻しの自動通知を有効化します。",
+    "reference_doc_ids": ["kintone-002"]
+  },
+  {
+    "id": "T13",
+    "question": "KintoneにCSVをインポートする前に、どのようなデータ整形が必要ですか。",
+    "expected_answer": "次の整形が必要です。①文字コードをUTF-8にする ②フィールド名をアプリと一致させる ③日付をYYYY/MM/DD形式に統一する ④数値フィールドからカンマを除く ⑤インポート後にサンプルレコードを確認する",
+    "reference_doc_ids": ["kintone-003"]
+  },
+  {
+    "id": "T14",
+    "question": "部門で新しいSharePointサイトを作成したい場合、自由に作成できますか。",
+    "expected_answer": "自由には作成できません。新規サイトの作成には管理者の承認が必要です。サイトメンバー権限は、基本的にチーム単位で付与します。",
+    "reference_doc_ids": ["m365-004"]
+  },
+  {
+    "id": "T15",
+    "question": "10分程度の簡単な確認でも、Outlookから会議を招集するべきですか。",
+    "expected_answer": "資料では、15分未満の打ち合わせにはチャットの活用が推奨されています。そのため、内容がチャットで確認できる場合は、会議を設定せずチャットを利用します。",
+    "reference_doc_ids": ["outlook-003"]
+  },
+  {
+    "id": "T16",
+    "question": "新入社員にはMicrosoft 365 E3とE5のどちらを割り当てますか。",
+    "expected_answer": "提供された資料には、割り当てるMicrosoft 365ライセンスの種類は記載されていません。管理者または社内IT部門への確認が必要です。",
+    "reference_doc_ids": []
+  },
+  {
+    "id": "T17",
+    "question": "Slackのメッセージは何年間保存されますか。",
+    "expected_answer": "提供された資料には、Slackメッセージの具体的な保存期間は記載されていません。社内のSlack管理ポリシーを確認してください。",
+    "reference_doc_ids": []
+  },
+  {
+    "id": "T18",
+    "question": "会社支給PCを紛失した場合の連絡先と手続きを教えてください。",
+    "expected_answer": "提供された資料には、PC紛失時の連絡先や対応手順は記載されていません。社内IT部門またはセキュリティ担当者へ確認してください。",
+    "reference_doc_ids": []
+  },
+  {
+    "id": "T19",
+    "question": "通知を設定したいのですが、どうすればよいですか。",
+    "expected_answer": "どのシステムの通知を設定したいか確認します。Microsoft Teams、Kintone、Monday、Slackなどによって設定方法が異なります。適切な確認質問の例：Teams、Kintone、Monday、Slackのうち、どのシステムの通知設定でしょうか。",
+    "reference_doc_ids": []
+  },
+  {
+    "id": "T20",
+    "question": "チームのメンバーにファイルを共有するにはどうすればよいですか。",
+    "expected_answer": "ファイルの用途や保存期間を確認します。一時的な共有であればSlackを利用できますが、正式文書や長期保存が必要な資料はSharePointまたはBacklogに保存します。",
+    "reference_doc_ids": ["slack-003", "m365-004", "backlog-003"]
+  }
+]

@@ -1,0 +1,22 @@
+# ==========================================
+# RAG 評価ワークショップ — Python 依存ライブラリ
+# ==========================================
+
+# 環境変数
+python-dotenv>=1.0.0
+
+# watsonx.ai SDK（RAG回答生成・Embedding）
+ibm-watsonx-ai>=1.1.0
+
+# Milvus クライアント
+pymilvus>=2.4.0
+
+# OpenRouter API 呼び出し
+requests>=2.31.0
+
+# Streamlit UI
+streamlit>=1.35.0
+
+# データ処理・Excel エクスポート
+pandas>=2.0.0
+openpyxl>=3.1.0
